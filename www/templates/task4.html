@@ -1,0 +1,25 @@
+<div class="jumbotron text-center">
+    <h1>Welcome to WalletHub, task 4:</h1>
+    <p>Sorting and filtering of array items</p>    
+</div>
+<div class="table-responsive">
+<label>Sort by:</label><select ng-model="country" ng-options="e.country for e in employees"></select>
+<label>Search: <input ng-model="searchText"></label>
+<table class="table table-striped">
+<thead>
+      <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+</thead>
+<tbody>
+	<tr ng-repeat="employee in employees | filter:searchText | filter:country">
+        <td>{{employee.name}}</td>
+        <td>{{employee.city}}</td>
+        <td>{{employee.country}}</td>
+      </tr>
+</tbody>
+
+</table>
+</div>

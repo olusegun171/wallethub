@@ -1,0 +1,25 @@
+{
+  "name": "wallethub",
+  "authors": [
+    "olusegun <olusegun171@gmail.com"
+  ],
+  "description": "wallet hub app",
+  "main": "main",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-animate": "^1.5.8",
+    "angular-touch": "^1.5.8",
+    "requirejs": "^2.3.2",
+    "angular-ui-router": "^0.3.1"
+  }
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My AngularJS AngularJS + RequireJS App</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="lib/angular-animate/angular-animate.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+</head>
+<body ng-app="WalletHub">
+
+    <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">Angular App</a>
+    </div>
+    <ul class="nav navbar-nav">
+          <li><a ui-sref="page({id: '1', param2: 'Javascript'})">Page1</a></li>
+          <li><a ui-sref="page({id: '2', param2: 'Angular'})">Page2</a></li>
+          <li><a ui-sref="page({id: '3', param2: 'Bootstrap'})">Page3</a></li>
+        
+        <li><a ui-sref="task2">Task 2</a></li>
+        <li><a ui-sref="task4">Task 4</a></li>
+        <li><a ui-sref="task5">Task 5&6</a></li>
+        <li><a ui-sref="task7">Task 7</a></li>
+        <li><a ui-sref="task8">Task 8</a></li>
+    </ul>
+</nav>
+<div class="container">
+ <div ui-view></div>
+</div>
+</body>
+</html

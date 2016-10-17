@@ -1,0 +1,10 @@
+<div class="jumbotron text-center">
+    <h1>Welcome to WalletHub, task 7:</h1>
+    <p>Create 3 number inputs that sum up into an additional field. Editing each of the 3 inputs will always update the sum value. The fourth field can also be editable, and whenever user changes this one its value must be spread across the other 3 fields.</p>
+<div class="input-group">  
+  <label>First Number</label><input name='num1' value="{{num1}}" ng-model="num1" type="number" class="form-control"><br>
+  <label>Second Number</label><input name='num2' ng-model="num2" type="number" class="form-control" ><br>
+  <label>Third Number</label><input name='num3' ng-model="num3" type="number" class="form-control"><br>
+  <label>total</label><input value="{{num1+num2+num3}}" name='total' ng-model="total" type="number" class="form-control" ngchange="changeValue()">
+</div>
+</div>
