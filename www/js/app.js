@@ -12,6 +12,12 @@ angular.module('WalletHub', ['ui.router','ngAnimate','WalletHub.controllers'])
             controller: 'PageCtrl',
             
         })
+   .state('task2',{
+            url: "/task2",
+            templateUrl: 'templates/task2.html',
+            controller: 'Task2Ctrl',
+            
+        })
    .state('task4',{
             url: "/task4",
             templateUrl: 'templates/task4.html',
@@ -31,11 +37,5 @@ angular.module('WalletHub', ['ui.router','ngAnimate','WalletHub.controllers'])
    .state('task8',{
             url: "/task8",
             templateUrl: 'templates/task8.html', 
-        })
-   .state('task2',{
-            url: "/task2",
-            templateUrl: 'templates/task2.html',
-            controller: 'Task2Ctrl',
-            
         });
  });
